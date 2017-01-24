@@ -10,7 +10,7 @@
     
     <title>
         
-            tags | 
+            标签: 技术 | 
         
         Kitcham’s Blog
     </title>
@@ -48,7 +48,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://kitcham.top">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="tags | Kitcham’s Blog">
+    <meta property="og:title" content="标签: 技术 | Kitcham’s Blog">
     <meta property="og:description" content="End with One">
 
     <!--[if lte IE 9]>
@@ -200,63 +200,88 @@
                         </button>
                     
 
-                    <!-- Post TOC -->
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
+    
+    <div class="locate-thumbnail-symbol"></div>
 
+    
+        
+            <!-- Paradox Thumbnail -->
+            <div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
 
-<!-- Layouts -->
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2017/01/22/你好呀/">投奔到Hexo中</a></p>
+    </div>
 
-    <!-- Tags Cloud -->
-    <style>
-    #bottom{
-        position: relative;
-    }
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            讲真，Wordpress的”浩瀚“和”Typecho“的”精致”都已经体会过了
 
-    @media screen and (max-width: 480px) {
-        .material-tagscloud{
-            margin: 6em 2em 0;
-        }
-    }
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2017/01/22/你好呀/" target="_self">继续阅读</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="http://ok70a2brv.bkt.clouddn.com/img/main/avatar-100.png" width="44px" height="44px" alt="Kitcham's avatar">
+            </div>
+            <div>
+                <strong>Kitcham</strong>
+                <span>1月 22, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+            <!-- Category -->
+            <span class="post_entry-category">
+                <a class="post_category-link" href="/categories/浮生记/">浮生记</a>, <a class="post_category-link" href="/categories/浮生记/技术部/">技术部</a>
+            </span>
 
-    .material-tagscloud a{
-        text-decoration:none;
-        padding: 1px 9px;
-        margin: 9px 1px;
-        line-height: 40px;
-        white-space: nowrap;
-        transition: .6s;
-        opacity: .85;
-    }
+            
 
-    .material-tagscloud a:hover{
-        transition: .6s;
-        opacity: 1;
-        background: #FAFAFA;
-        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-    }
-</style>
-
-<div class=" material-tagscloud">
-    <div class="material-post mdl-grid">
-        <a href="/tags/Hexo/" style="font-size: 16px; color: #757575">Hexo</a> <a href="/tags/Material-Design/" style="font-size: 16px; color: #757575">Material Design</a> <a href="/tags/Typecho/" style="font-size: 16px; color: #757575">Typecho</a> <a href="/tags/Wordpress/" style="font-size: 16px; color: #757575">Wordpress</a> <a href="/tags/技术/" style="font-size: 16px; color: #757575">技术</a> <a href="/tags/起源/" style="font-size: 16px; color: #757575">起源</a>
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
     </div>
 </div>
 
+        
+        
+    
 
-<script>
-    var adjustFooter = function() {
-        if( ($('#bottom').offset().top + $('#bottom').outerHeight() ) < $(window).height() ) {
-            var footerBottom = $(window).height() - $('#bottom').outerHeight() - $('#bottom').offset().top;
-            $('#bottom').css('bottom', '-' + footerBottom + 'px');
-        }
-    };
+    
 
-    $(document).ready(function() {
-        adjustFooter();
-    });
+    
+        <script>
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 10; i++) {
+        randomNum = Math.floor(Math.random() * 19 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').css('background-image', 'url(' + 'http://ok70a2brv.bkt.clouddn.com/img/main/random/material-' + randomNum + '.png' + ')')
+
+        locatePost = locatePost.next();
+    }
 </script>
 
-
-
+    
+</div>
 
 
                     

@@ -4,9 +4,20 @@
   
     
     <entry>
-      <title><![CDATA[嗯……在Github装了个Hexo]]></title>
+      <title><![CDATA[投奔到Hexo中]]></title>
       <url>http://kitcham.top/2017/01/22/%E4%BD%A0%E5%A5%BD%E5%91%80/</url>
-      <content type="html"><![CDATA[<p>你好呀！Hello！Githun &amp; Hexo！</p>
+      <content type="html"><![CDATA[<p>讲真，Wordpress的”浩瀚“和”Typecho“的”精致”都已经体会过了</p>
+<h1 id="终于，决定是Hexo了"><a href="#终于，决定是Hexo了" class="headerlink" title="终于，决定是Hexo了"></a>终于，决定是Hexo了</h1><blockquote>
+<p>Hi,Hexo！</p>
+</blockquote>
+<h2 id="为什么要抛弃WP和TP？"><a href="#为什么要抛弃WP和TP？" class="headerlink" title="为什么要抛弃WP和TP？"></a>为什么要抛弃WP和TP？</h2><p>WP的功能强大决定了其维护也需要付出更多的心血，选用主机自己不太会，选到的主机都不怎么满意，所以加载体积庞大的WP时日常性想扔键盘。加上曾经被攻击几次(╬▔皿▔)！想用CDN，免费的太废物，未成年无法备案收费又没办法用┑(￣Д ￣)┍。广东地区如此坑！</p>
+<p>TP足够精简，的确是个对主机友好的程序，但感觉自由度不高，不能满足自己的需求。（可能有点挑剔？！）</p>
+<p>PS：自己当初也是入了Viosey的Material-TP主题的坑，真的发自内心觉得可以满分啊！所以继续沿用到了Hexo中<br>又PS：其实上面觉得更多的心血就是自己懒！懒！懒！懒得对后台维护，沉迷学习，不能自拔。</p>
+<blockquote>
+<p>懒是一种境界，从未被超越，从未被达到。——纳什·沃夏尔·硕德</p>
+</blockquote>
+<h2 id="怎么用上的Hexo？"><a href="#怎么用上的Hexo？" class="headerlink" title="怎么用上的Hexo？"></a>怎么用上的Hexo？</h2><p>其实Google下就好，网上教程太多啦，部署起来还是比较容易的。虽然教程的细节与现在的版本有所出入，但研究下还是OK的。</p>
+<h2 id="安利"><a href="#安利" class="headerlink" title="安利"></a>安利</h2><p>安利一个，Viosey的Material主题，作为一个谷粉，感谢这个轮子<a href="https://github.com/viosey/hexo-theme-material" target="_blank" rel="external">Material Theme</a></p>
 ]]></content>
     </entry>
     
