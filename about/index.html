@@ -10,7 +10,7 @@
     
     <title>
         
-            标签: Material Design | 
+            About Me | 
         
         Kitcham’s Blog
     </title>
@@ -48,7 +48,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://kitcham.top">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: Material Design | Kitcham’s Blog">
+    <meta property="og:title" content="About Me | Kitcham’s Blog">
     <meta property="og:description" content="End with One">
 
     <!--[if lte IE 9]>
@@ -200,86 +200,227 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
-            <!-- Paradox Thumbnail -->
-            <div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://cdn.kitcham.top/blog/img/blog/hexo-logo.png)">
-    
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/01/22/你好呀/">投奔到Hexo中</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            讲真，Wordpress的”浩瀚“和”Typecho“的”精致”都已经体会过了
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/01/22/你好呀/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="https://cdn.kitcham.top/blog/img/main/avatar-100.png" width="44px" height="44px" alt="Kitcham's avatar">
-            </div>
-            <div>
-                <strong>Kitcham</strong>
-                <span>1月 22, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/浮生记/">浮生记</a>
-            </span>
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-        
-        
-    
-
-    
-
-    
-        <script>
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').css('background-image', 'url(' + 'https://cdn.kitcham.top/blog/img/main/random/material-' + randomNum + '.png' + ')')
-
-        locatePost = locatePost.next();
-    }
+    $('.post_thumbnail-random').css('background-image', 'url(' + 'https://cdn.kitcham.top/blog/img/main/random/material-' + randomNum + '.png' + ')');
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                About Me
+            </p>
+        </div>
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="https://cdn.kitcham.top/blog/img/main/avatar-100.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Kitcham</strong>
+        <span>1月 23, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+        <a class="post_share-link" href="#">
+            <li class="mdl-menu__item">
+                <span id="/about/index.html" class="leancloud-views_num" data-flag-title="About Me">
+     &nbsp;浏览量
+</span>
+
+            </li>
+        </a>
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=About Me&url=http://kitcham.top//about/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=About Me&url=http://kitcham.top//about/index.html&via=Kitcham" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://kitcham.top//about/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://kitcham.top//about/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+                <!-- Post Content -->
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>我是Kitcham <code>/ˈkɪtʃɑ:m/</code><br>当然我在作业本上从来都是写的 Kit(懒呗…）</p>
+<p>你可能会问。What？ 作业本？！<br>没错，UR Right，我就一条高中狗。#_#</p>
+<p>目前高二，目前沉默在广东某某某中学。正如</p>
+<blockquote>
+<p>这是一个最好的时代，这是一个最坏的时代；<br>这是一个智慧的年代，这是一个愚蠢的年代；<br>这是一个光明的季节，这是一个黑暗的季节；<br>这是希望之春，这是失望之冬；<br>人们面前应有尽有，人们面前一无所有；<br>人们正踏上天堂之路，人们正走向地狱之门。<br><em>——狄更斯《双城记》</em></p>
+</blockquote>
+<p>这是我个人最喜欢的一段话。所以在学校所谓荡漾的同时，也去接手了个名曰IT CLUB的社团。<br>其实自小也是很喜欢这种So Geek的东西。当做是自我修炼吧！</p>
+<blockquote>
+<p><strong>内心OS：</strong>我要做一只兼修CS的金融狗啊啊啊！！！×3 <em>手动斜眼 →_→</em></p>
+</blockquote>
+<p>生活中呢，应该可以说是个精分患者。无论你和我熟不熟，理论上我都会有N种面目面对你，有高冷，有低暖（什么鬼）……</p>
+<p>对啦，泡知乎是经常的事每次我都要告诉自己：快点砍手，然而并没什么……</p>
+<blockquote>
+<p>做个令人眼红的人生赢家，告诉大家一定要做到以下几点：<br>1.<del>多喝热水</del><br>2.多看书<br>3.做个程序猿吧！或者产品经理也不错？？⚆_⚆？<br>4.<del>少吃零食</del>多睡觉<br><em>——Kitcham</em></p>
+</blockquote>
+<h3 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h3><p><strong>主页：</strong><a href="http://kitcham.top">Kitcham’s Blog</a></p>
+<p><strong>微信：</strong>36d4ad9c17b2a068f8ff0aaacf3f3705<br>Do not  give up！！Just try it.</p>
+<p><strong>QQ：</strong>492225272<br><strong>E-mail：</strong>tjj386999@outlook.com<br>邮件会推送哒，谷歌粉钟爱的GSM万岁(手动滑稽）</p>
+<p><strong>Telegram</strong>迟点补个？？<br>Just look for me</p>
+
+    
+
     
 </div>
+
+                
+                <!-- Post Comments -->
+                
+                    
+
+
+    <!-- 使用 DISQUS -->
+    <div id="disqus-comment">
+        <div id="disqus_thread"></div>
+<script>
+    $('html').ready(function() {
+        setTimeout(function() {
+            var disqus_config = function () {
+                this.page.url = 'http://kitcham.top/about/index.html';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//kitchamblog.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        },1500);
+    });
+</script>
+
+    </div>
+    <style>
+        #disqus-comment{
+            background-color: #eee;
+            padding: 2pc;
+        }
+    </style>
+
+
+                
+            </div>
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
 
 
                     
